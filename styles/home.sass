@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+html, body
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 16px;
+    // background: #26263C;
+
+.home
+
+    &-hero
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &-content
+            width: 65vw;
+            position: relative;
+            z-index: 100;
+
+    &-projects
+        height: 800px;
+        padding: 0 10vw;
+        background: red;
+    
+    &-project
+        height: 600px;
+        display: flex;
+
+
+        &-image
+            width: 40%;
+            overflow: hidden;
+            background-image: url('/static/img/projects/crmsuite.jpg');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        &-text
+            width: 60%;
+            padding: 0 5%;
+            box-sizing: border-box;
+
+            & h2
+                font-size: 2.5em;
+                font-weight: 400;
+
+            & p 
+                font-size: 1.2em;
+                line-height: 1.5em;
+                padding-right: 20%;
+
+            & button
+                font-size: 1.2em;
+                background: red;
+                border: none;
+                padding: 15px;
+                border-radius: 5px;
+                color: #fff;
+
+    &-img
+        height: 50px;
+        position: absolute;
+        opacity: 0.7;
+
+        &-person
+            height: 600px;
+            position: absolute;
+            bottom: 00px;
+            margin: auto;
+            left: 0;
+            right: 0;
+        
+        &.coding
+            top: 0;
+            left: 10vw;
+
+        &.cloud
+            top: 0;
+            right: 15vw;
+
+        &.html
+            top: 35vh;
+            right: 20vw;
+
+        &.css
+            top: 45vh;
+            left: 30vw;
+        
+        &.js
+            bottom: 10vh;
+            left: 10vw;
+        
+        &.github
+            bottom: 10vh;
+            right: 10vw;
+
+.text-h1
+    margin: 0;
+    font-weight: 400;
+    font-size: 3.1em;
+    line-height: 1.7em;
+    color: #343434;
+
+
+.text-p
+    color: #BEBEBA;
+    font-size: 1.5em;
+    text-align: right;
+    margin-top: 180px;
+    margin-right: 6vw;
