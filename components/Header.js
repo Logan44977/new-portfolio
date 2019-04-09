@@ -14,14 +14,13 @@ export const Header = (props) => {
 
             <div className="header-logoHolder">
                {/* TODO: make this into an svg */}
-               <Link href="/">
+               {/* <Link href="/">
                 <img alt="Logo" src="../static/img/logo.png" className="header-logo"/>
-               </Link>
+               </Link> */}
             </div>
 
             <div className="header-links">
-                <Link href="/">Works</Link>
-                {/* <Link href="/">Blog</Link> */}
+                <Link href="/works">Works</Link>
                 <Link href="/">About</Link>
                 <Link href="/">Contact</Link>
             </div>

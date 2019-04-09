@@ -9,16 +9,23 @@ html, body
 .home
 
     &-hero
-        height: 70vh;
+        height: calc(100vh - 150px);
         display: flex;
         justify-content: center;
-        align-items: center;
+        // align-items: center;
+        box-sizing: border-box;
+        padding-top: 150px;
         position: relative;
 
         &-content
             width: 65vw;
             position: relative;
             z-index: 100;
+            text-align: center;
+
+        &-btnHolder
+            text-align: center;
+            margin-top: 80px;
 
     &-projects
         height: 800px;
@@ -72,30 +79,6 @@ html, body
             margin: auto;
             left: 0;
             right: 0;
-        
-        &.coding
-            top: 0;
-            left: 10vw;
-
-        &.cloud
-            top: 0;
-            right: 15vw;
-
-        &.html
-            top: 35vh;
-            right: 20vw;
-
-        &.css
-            top: 45vh;
-            left: 30vw;
-        
-        &.js
-            bottom: 10vh;
-            left: 10vw;
-        
-        &.github
-            bottom: 10vh;
-            right: 10vw;
 
 .text-h1
     margin: 0;
@@ -104,6 +87,9 @@ html, body
     line-height: 1.7em;
     color: #343434;
 
+    & span
+        color: #ed2c5c;
+
 
 .text-p
     color: #BEBEBA;
@@ -111,3 +97,16 @@ html, body
     text-align: right;
     margin-top: 180px;
     margin-right: 6vw;
+
+.button
+    &-primary
+        border: none;
+        background: #ed2c5c;
+        color: #fff;
+        font-size: 1.5em;
+        padding: 20px 25px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: ease-in 0.1s;
+        &:hover
+            transform: scale(1.1);

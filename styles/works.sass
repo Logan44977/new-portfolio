@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+html, body
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 16px;
+
+.works
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+
+    &-left
+        background: #fff;
+        width: 26%;
+
+    &-header
+        height: 100px;
+        width: 100%;
+
+        &-menuholder
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding-left: 50px;
+
+        &-menu
+            height: 30px;
+            cursor: pointer;
+
+    &-yearsholder
+        height: calc(100vh - 100px);
+        box-sizing: border-box;
+        // padding: 0 0 200px;
+
+    &-year
+        height: calc(100% / 3);
+        display: flex;
+        justify-content: center;
+    
+    &-right
+        width: 74%;
+        overflow: auto;
+
+        &::-webkit-scrollbar
+            background-color: #f5f5f5;
+            width: 6px;
+	        
+
+        &::-webkit-scrollbar-track
+	        background-color: rgba(0,0,0,0) !important;
+
+        &::-webkit-scrollbar-thumb
+            background-color: #000000 !important;
+
+
+        &-projects
+
+    &-text
+        &-year
+            font-size: 3em;
+            cursor: pointer;
+            color: #BEBEBA;
+            transition: 0.2s ease-in;
+
+            &:hover
+                transform: scale(1.1);
+                color: #343434;
+
+            &.active
+                color: #343434;
+                font-size: 4em;
+
+.work
+    height: 75vh;
+    background: #464A4F;
+    border-radius: 20px 0 0 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    box-sizing: border-box;
+    padding: 5%;
+
+    &#wip
+        background-color: #e5646d;
+
+    &#crm
+        background-color: #5898c9;
+
+    &#ebrochure
+        background-color: #342e84;
+
+    &#lenny
+        background-color: #18633a;
+
+    &.single
+        margin-top: 8vh;
+        height: 84vh;
+        margin-bottom: 8vh;
+
+    &-left
+        width: 60%;
+
+    &-right
+        width: 40%;
+
+        &-line
+            background: #fff;
+            width: 35%;
+            margin-left: 65%;
+            height: 2px;
+            margin-top: 2em;
+
+            &.faded
+                opacity: 0.4;
+                margin-top: 0;
+                margin-bottom: 2em;
+
+        &-techholder
+            text-align: left;
+            width: 35%;
+            margin-left: 65%;
+            display: block;
+            box-sizing: border-box;
+            padding: 0 30px;
+
+        &-button
+            margin-left: 65%;
+            margin-top: 50px;
+            background: #fff;
+            width: 35%;
+            height: 13vh;
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            font-size: 1.3em;
+            color: #111;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.1s ease-in;
+
+            &:hover
+                transform: scale(1.1);
+
+
+
+    &-title
+        font-size: 3em;
+        margin: 0;
+        color: #fff;
+
+    &-techtitle
+        font-size: 1.8em;
+        color: #fff;
+        margin-left: 65%;
+        margin-bottom: 10px;
+
+    &-tech
+        color: #fff;
+
+    &-image
+        margin-top: 70px;
+        background: #fff;
+        border-radius: 8px;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        font-weight: 400;
+        color: #343434;
+
+    &-year
+        font-size: 5em;
+        margin: 0 0 50px 100px;
+        color: #fff;
